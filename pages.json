@@ -1,0 +1,87 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "bbs论坛",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/msg/msg"
+		},
+		{
+			"path": "pages/hot/hot"
+		},
+		{
+			"path": "pages/me/me"
+		}
+    ],
+	"subPackages": [
+		{
+			"root": "pagea",
+			"pages": [
+				{
+					"path": "search/search",
+					"style": {
+						"navigationBarTitleText": "搜索"
+					}
+				},
+				{
+					"path": "auth/index",
+					"style": {
+						"navigationBarTitleText": "bbs技术社区"
+					}
+				}
+			]
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"app-plus": {
+			"background": "#efeff4",
+			"scrollIndicator": "none"
+		}
+	},
+	"tabBar": {
+		"color": "#999",
+		"backgroundColor": "#fafafa",
+		"selectedColor": "#02D199",
+		"borderStyle": "white",
+		// "iconfontSrc": "/static/fonts/iconfont.ttf",
+		"list": [
+			{
+				"text": "首页",
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabbar/home.png",
+				"selectedIconPath": "static/tabbar/home_selected.png"
+				// "iconfont": {
+				// 	"text": "\ue6b8;",
+				// 	"selectedText": "\ue6b8",
+				// 	"fontSize": "22px"
+				// }
+			},
+			{
+				"text": "消息",
+				"pagePath": "pages/msg/msg",
+				"iconPath": "static/tabbar/msg.png",
+				"selectedIconPath": "static/tabbar/msg_selected.png"
+			},
+			{
+				"text": "热门",
+				"pagePath": "pages/hot/hot",
+				"iconPath": "static/tabbar/hot.png",
+				"selectedIconPath": "static/tabbar/hot_selected.png"
+			},
+			{
+				"text": "我的",
+				"pagePath": "pages/me/me",
+				"iconPath": "static/tabbar/user.png",
+				"selectedIconPath": "static/tabbar/user_selected.png"
+			}
+		]
+	}
+}

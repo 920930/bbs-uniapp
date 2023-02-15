@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2570517 */
+  src: url('iconfont.ttf?t=1675674188355') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-alipay1:before {
+  content: "\e600";
+}
+
+.icon-weibo1:before {
+  content: "\e667";
+}
+
+.icon-QQ:before {
+  content: "\e668";
+}
+
+.icon-edit:before {
+  content: "\e72d";
+}
+
+.icon-right:before {
+  content: "\e7eb";
+}
+
+.icon-delete:before {
+  content: "\e67e";
+}
+
+.icon-maiqianzheng:before {
+  content: "\e66e";
+}
+
+.icon-home:before {
+  content: "\e6b8";
+}
+
+.icon-hot:before {
+  content: "\e758";
+}
+
+.icon-msg:before {
+  content: "\e66d";
+}
+
+.icon-user:before {
+  content: "\e7ae";
+}
+
