@@ -24,23 +24,15 @@
 </template>
 
 <script setup lang="ts">
-import { onLoad } from '@dcloudio/uni-app'
-import { inject } from 'vue';
-
-const http: any = inject('http')
+// import { onLoad } from '@dcloudio/uni-app'
 const wechatBtn = async () => {
-	Promise.all([getLogin(), getUser()]).then((ret: any[]) => {
-		http.post('login/wechat', {
-			code: ret[0].code,
-			info: ret[1]
-		}).then(ret => console.log(ret))
+	uni.navigateTo({
+		url: '/pagea/auth/wechat'
 	})
 }
 
 const getLogin = () => (uni.login())
-const getUser = () => (uni.getUserProfile({desc: '登录'}))
-
-onLoad(() => getLogin())
+const getUser = async () => (uni.getUserProfile({desc: '登录'}))
 </script>
 
 <style lang="scss" scoped>

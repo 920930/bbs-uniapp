@@ -32,6 +32,12 @@
 					"style": {
 						"navigationBarTitleText": "bbs技术社区"
 					}
+				},
+				{
+					"path": "auth/wechat",
+					"style": {
+						"navigationBarTitleText": "微信登录"
+					}
 				}
 			]
 		}
