@@ -32,6 +32,12 @@
 					"style": {
 						"navigationBarTitleText": "bbs技术社区"
 					}
+				},
+				{
+					"path": "auth/code",
+					"style": {
+						"navigationBarTitleText": "手机号快捷登录"
+					}
 				}
 			]
 		}

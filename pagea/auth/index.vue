@@ -43,8 +43,10 @@ const isDisabled = computed(() => {
 	return isArgee.value ? (phone.value.length > 0 ? false : true) : true;
 })
 const argeeFn = () => {
-	if(/^1[3-9]\d{9}&/.test(phone.value)) {
-		
+	if(/^1[3-9]\d{9}$/.test(phone.value.trim())) {
+		uni.navigateTo({
+			url: '/pagea/auth/code?phone='+phone.value,
+		})
 	}else{
 		uni.showToast({
 			title: '请填写正确的手机号',
@@ -108,8 +110,8 @@ const getUser = async () => (uni.getUserProfile({desc: '登录'}))
 		padding: 6rpx 0;
 		background-color: red;
 		color: white;
-		border-radius: 50rpx;
-		border: 1px solid red;
+		outline: none;
+		background-color: red;
 	}
 	&-input{
 		background-color: rgba(0, 0, 0, 0.05);
